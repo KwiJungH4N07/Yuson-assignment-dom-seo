@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Motorcycle Hobby</title>
+  <meta name="description" content="A simple page about my motorcycle hobby, including rides and bike maintenance tips.">
+  <meta name="keywords" content="motorcycle, hobby, bike riding, maintenance">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; color: #333; }
+    header { background: black; color: white; padding: 10px; text-align: center; }
+    h1 { color: orange; }
+    h2 { color: darkred; }
+    .highlight { background: yellow; }
+    .tip { margin: 5px 0; cursor: pointer; padding: 5px; border: 1px solid #ddd; border-radius: 5px; }
+    button { margin-top: 10px; padding: 5px 10px; border: none; background: orange; color: white; border-radius: 5px; cursor: pointer; }
+    input { padding: 5px; width: 200px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Motorcycle Hobby</h1>
+    <button id="darkModeBtn">Dark Mode</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Why I Love Motorcycles</h2>
+      <p>Riding motorcycles gives me freedom, excitement, and a chance to explore the open road.</p>
+      <img src="https://suzuki.motortrade.com.ph/wp-content/uploads/2018/09/Black-1.png" alt="Motorcycle on road" width="300">
+    </section>
+
+    <section>
+      <h2>Bike Maintenance Tips</h2>
+      <p>Click on a tip to highlight it:</p>
+      <ul id="tips">
+        <li class="tip" onclick="highlight(this)">Check tire pressure before riding.</li>
+        <li class="tip" onclick="highlight(this)">Change engine oil regularly.</li>
+        <li class="tip" onclick="highlight(this)">Clean and lubricate the chain.</li>
+      </ul>
+      <form id="tipForm">
+        <input type="text" id="newTip" placeholder="Add your tip here">
+        <button type="submit">Add Tip</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
